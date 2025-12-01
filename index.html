@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#d97706" />
+    <title>FoxFocus Tracker</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              'pixel': ['"Press Start 2P"', 'cursive'],
+              'digit': ['"VT323"', 'monospace'],
+            },
+            colors: {
+              fox: {
+                100: '#ffedd5',
+                300: '#fdba74',
+                500: '#f97316',
+                700: '#c2410c',
+                900: '#7c2d12',
+              },
+              wood: '#451a03',
+            },
+            boxShadow: {
+              'pixel': '4px 4px 0 0 rgba(0, 0, 0, 1)',
+              'pixel-sm': '2px 2px 0 0 rgba(0, 0, 0, 1)',
+              'pixel-inset': 'inset 4px 4px 0 0 rgba(0, 0, 0, 0.2)',
+            }
+          }
+        }
+      }
+    </script>
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.30.0",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.555.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-yellow-50 text-wood antialiased overflow-hidden">
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>

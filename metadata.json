@@ -1,0 +1,7 @@
+{
+  "name": "FoxFocus Tracker",
+  "description": "A pixel-art style time tracker with voice-to-text transcription for task comments.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}
